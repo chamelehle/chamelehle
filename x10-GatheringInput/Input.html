@@ -3,31 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <title>Gathering Input</title>
-    <form action="demo_form.asp">
-  First name: <input type="text" name="fname"><br>
-  Last name: <input type="text" name="lname"><br>
-  <input type="text" value="first">
-  <br>
-  <form action="demo_form.asp">
-First name: <input type="text" name="fname"><br>
-Last name: <input type="text" name="lname"><br>
-<input type="text" value="last">
-</form>
+
     <script>
-    var money = 100.00;
-      function clickOne(){
-        money += 1;
-        document.getElementById("output").innerHTML = "Done" + money;
-      }
-      function clickTwo(){
-        money -= 1;
-        document.getElementById("output").innerHTML = "Done" + money;
-      }
+    function getName()
+    {
+       var fullName = document.getElementById("first").value;
+      fullName = fullName + ' ' +  document.getElementById("last").value;
+      document.getElementById("message").innerHTML = fullName;
+    }
     </script>
-  </head>
+  </head lang="en-US">
   <body lang="en-US">
-    <button type="button" id="doneButton" onclick="clickOne();">One</button>
-    <button type="button" id="donebutton" onclick="clickTwo();">Two</button>
-    <p id="message">Counter: </p>
-  </body>
+    First name:<input type="text" id="first"><br>
+    Last name: <input type="text" id="last">
+    <button type="button" id="doneButton" onclick="getName();">One</button>
+    <p id="message"></p>
+  </body lang="en-US">
 </html>
