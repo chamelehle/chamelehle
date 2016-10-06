@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e3526dad4ed3ffe49a9b8266582d57f9
+timeCreated: 1475778241
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - standardTurretPrefab: {fileID: 1000012664914064, guid: 3e602175e998e064698ab604bd45f210,
+      type: 2}
+  - missileLauncherPrefab: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
